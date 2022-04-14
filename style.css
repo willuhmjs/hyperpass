@@ -1,0 +1,30 @@
+:root {
+  --text-color: #008f11;
+  --fill-color: #00660c;
+  --fill-color-dark: #003306;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  background-color: var(--text-color);
+}
+
+.form-range::-webkit-slider-thumb,
+.form-range::-webkit-slider-thumb:active {
+  background-color: var(--fill-color);
+}
+
+body {
+  background-color: black;
+  font-family: monospace;
+  color: var(--text-color);
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+input:not(input[type="range"]) {
+  background-color: transparent;
+  border: 2px solid var(--text-color);
+  padding: 0.5rem;
+  color: var(--text-color);
+}
